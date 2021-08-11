@@ -13,7 +13,7 @@ export const HeroCard = ({id,superhero,publisher,alter_ego,first_appearance,char
                         <h5 className="card-tilte">{superhero}</h5>
                         <p className="card-text">{alter_ego}</p>
                         {
-                            (alter_ego!=characters) && <p className="card-text">{characters}</p>
+                            (alter_ego!==characters) && <p className="card-text">{characters}</p>
                         }
                         <p className="card-text">
                             <small className="text-muted">{first_appearance}</small>
